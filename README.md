@@ -1,2 +1,4 @@
-# Algorithm
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Baekjoon 1일 1제
+
+## 2024.10.11 (금) ~ 2025.01.18(토) 
+### 선별된 백준 100문제 하루에 하나씩 풀기 
