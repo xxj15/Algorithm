@@ -1,1 +1,0 @@
-{"name":"Local: 1092","url":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\BAEKJOON_PYTHON\\1092.py","tests":[{"id":1731764784385,"input":"5\n4 1 5 2 3\n5\n1 3 7 9 5","output":"1\n1\n0\n0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\BAEKJOON_PYTHON\\1092.py","group":"local","local":true}
