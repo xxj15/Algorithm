@@ -18,7 +18,6 @@ for i in range (n):
             str1.pop()
     else : 
         str1.append(cmd[1])
-
 print(''.join(str1 + str2[::-1]))
 
 
