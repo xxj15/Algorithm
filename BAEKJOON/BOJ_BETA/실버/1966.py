@@ -29,5 +29,3 @@ for _ in range(tc):
                 print(ans)
                 break
 
-
-
