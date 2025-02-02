@@ -1,5 +1,5 @@
 import sys 
-input = sys.stdin.readline  # 빠른 입력을 위해 sys.stdin.readline 사용
+input = sys.stdin.readline 
 
 # 로또 조합을 찾는 재귀 함수
 def lotto(arr, idx, depth):
@@ -10,22 +10,21 @@ def lotto(arr, idx, depth):
             print(k) 
         return
 
-    # 현재 인덱스부터 끝까지 숫자 선택
     for i in range(idx, int(n)):
-        tmp.append(arr[i])  # 숫자 추가
+        tmp.append(arr[i])  
         lotto(arr, i + 1, depth + 1)  # 다음 숫자 선택을 위해 재귀 호출
-        tmp.pop()  # 백트래킹: 이전 상태로 되돌리기
+        tmp.pop()  # 백트래킹을 하기 위해 마지막으로 추가한 숫자를 제거
 
 
-# 여러 테스트케이스를 처리하기 위한 루프
 while True:
-    data = input().split()  # 한 줄을 공백 기준으로 나눠 리스트로 저장
-    n = data[0]  # 첫 번째 값 (문자열 형태)
-    k = data[1:]  # 나머지 값들 (리스트 형태)
+    data = input().split()  
+    n = data[0]  
+    k = data[1:]  
 
-    if n == "0":  # 입력이 0이면 종료
+    if n == "0":  
         break
-    visited = dict()  # 중복된 조합을 방지하기 위한 딕셔너리
-    tmp = []  # 현재 선택된 숫자를 저장하는 리스트
-    lotto(k, 0, 0)  # 로또 조합 생성 시작
-    print()  # 테스트케이스 간 구분을 위한 개행 출력
+
+    visited = dict()  # 이미 출력된 조합 저장!
+    tmp = []  # 현재 조합 저장 
+    lotto(k, 0, 0)  # k = 숫자 리스트 / idx = 0 처음부터 탐색 / depth = 0 현재까지 선택산 숫자 개수 
+    print() 
