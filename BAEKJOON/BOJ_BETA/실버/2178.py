@@ -1,6 +1,6 @@
 #미로 탐색 
 from collections import deque
-import sys
+import sys 
 input = sys.stdin.readline
 
 n, m = map(int,input().split())
