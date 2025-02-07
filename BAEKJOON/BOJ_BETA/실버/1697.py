@@ -9,7 +9,7 @@ queue = deque() # 수빈 좌표 삽입
 max_num = 100000
 visited = [-1] * (max_num + 1)
 
-def bfs():
+def bfs(): 
     queue.append(n)
     visited[n]=0
 
