@@ -1,21 +1,27 @@
-# 포도주 시식 - 틀린 답 
+# 포도주 시식 - DP 
 import sys
 input = sys.stdin.readline
 
 n = int(input())
 drinks = [int(input().strip()) for _ in range(n)]
 
-sorted_drinks = sorted([(drinks[i], i) for i in range(n)], reverse=True)
+dp = [0] * n
 
-selected = set()  
-total = 0 
 
-for value, idx in sorted_drinks:
-    if (idx - 1 in selected and idx - 2 in selected) or (idx + 1 in selected and idx + 2 in selected) or (idx - 1 in selected and idx + 1 in selected):
-        continue  
+if n == 1 : 
+    print(drinks[0])
+    exit(0)
 
-    selected.add(idx)
-    total += value
+dp[0] = drinks[0]
 
-print(total)
+if n > 1 : 
+    dp[1]= drinks[0] + drinks[1]
+    
+if n > 2:
+    dp[2]= max(drinks[0]+drinks[1], drinks[0]+drinks[2], drinks[1]+drinks[2])
 
+
+for i in range(3, n):
+    dp [i] = max(dp[i-1],  dp[i-2] + drinks[i],  dp[i-3] + drinks[i-1] + drinks[i])
+
+print(dp[n-1])
