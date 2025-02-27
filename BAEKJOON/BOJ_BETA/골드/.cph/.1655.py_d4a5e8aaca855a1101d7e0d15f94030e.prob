@@ -1,0 +1,1 @@
+{"name":"Local: 1655","url":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\BAEKJOON\\BOJ_BETA\\골드\\1655.py","tests":[{"id":1740620364964,"input":"7\n1\n5\n2\n10\n-99\n7\n5","output":"1\n1\n2\n2\n2\n2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\BAEKJOON\\BOJ_BETA\\골드\\1655.py","group":"local","local":true}
