@@ -1,0 +1,1 @@
+{"name":"Local: 9079","url":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\Study\\완전탐색\\9079.py","tests":[{"id":1742001860693,"input":"3\nH T T\nH T T\nT H H\nT H H\nH H H\nH H H\nH H H\nH T H\nH H H","output":"2\n-1\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\Study\\완전탐색\\9079.py","group":"local","local":true}
