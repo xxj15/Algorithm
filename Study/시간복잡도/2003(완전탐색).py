@@ -1,22 +1,22 @@
-# 수들의 합 2
+# 수들의 합 2 
+# 부분합 이용한 완전탐색 - O(N^2)
 import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-
 numbers = list(map(int, input().split()))
+
 ans = 0
-left = 0
 
-for left in range(0,N):
-    for right in range(left,N):
-        sum = 0
-        for i in range(left, right + 1):
-            sum += numbers[i]
+for left in range(N): 
+    total = 0 
+    for right in range(left, N):
+        total += numbers[right]
 
-        if sum == M :
-            ans += 1
+        if total == M :
+            ans += 1 
             break
-
+        elif total > M :
+            break
 
 print(ans)
