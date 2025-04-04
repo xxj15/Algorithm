@@ -1,0 +1,1 @@
+{"name":"Local: 1991","url":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\Study\\자료구조\\1991.py","tests":[{"id":1743742079590,"input":"7\nA B C\nB D .\nC E F\nE . .\nF . G\nD . .\nG . .","output":"ABDCEFG\nDBAECFG\nDBEGFCA"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\xnote\\Desktop\\ALGORITHM\\Study\\자료구조\\1991.py","group":"local","local":true}
